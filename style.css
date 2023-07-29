@@ -1,0 +1,58 @@
+html,
+body{
+  height:100%;
+}
+h2{
+  text-align: right;
+  border-bottom: dashed gray 1px;
+  margin:0;
+  padding:20px;
+}
+#form{
+  display:grid;
+  grid-template-columns: 600px 1fr;
+}
+.gom img{
+  padding:20px;
+  border-right:dashed 1px gray;
+}
+.login{
+  position:absolute;
+  width:200px;
+  right:0;
+  top:100px;
+  left:250px;
+}
+.userbox,
+.pwbox,
+.check,
+.submit{
+  margin:0;
+}
+@media(max-width:600px){
+  h2{
+    border-bottom: none;
+    text-align: center;
+  }
+  #form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /*주축 및 교차축 기준으로 항상 가운데 정렬되도록*/
+  }
+  .gom img{
+    border-right:none;
+    width:200px;
+  }
+  .login{
+    margin:auto;
+    top:380px;
+    transform: translate(-54%,-50%);
+  }
+  .userbox,
+  .pwbox,
+  .check,
+  .submit{
+    margin:0;
+  }
+}
